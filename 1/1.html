@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clinic Appointment</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Clinic Appointment Booking</h1>
+        <nav>
+            <a href="#appointment-section">Book Appointment</a>
+            <a href="#about-clinic">About Clinic</a>
+            <a href="#appointments">View Appointments</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="appointment-section" class="appointment-form">
+            <h2>Book an Appointment</h2>
+            <form id="appointmentForm">
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" required>
+
+                <label for="date">Preferred Date:</label>
+                <input type="date" id="date" name="date" required>
+
+                <label for="time">Preferred Time:</label>
+                <input type="time" id="time" name="time" required>
+
+                <label for="doctor">Select Doctor:</label>
+                <select id="doctor" name="doctor" required>
+                    <option value="">--Select--</option>
+                    <option value="dr_smith">Dr. Mehra</option>
+                    <option value="dr_jones">Dr. Bishnoi</option>
+                    <option value="dr_williams">Dr. Chaudhary</option>
+                </select>
+
+                <button type="submit">Book Appointment</button>
+            </form>
+        </section>
+
+        <section id="about-clinic">
+            <h2>About Our Clinic</h2>
+            <p>Welcome to our clinic! We are dedicated to providing top-notch healthcare services with experienced doctors and a friendly staff. Our facilities are equipped with state-of-the-art technology to ensure the best care for our patients.</p>
+            <p>Location: 123 Medical fitness, Wellness City</p>
+            <p>Contact: 9935608186 | Doctor@clinic.com</p>
+        </section>
+
+        <section class="appointment-list">
+            <h2>Upcoming Appointments</h2>
+            <ul id="appointments"></ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Clinic Appointment. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
